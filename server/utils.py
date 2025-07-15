@@ -1,4 +1,5 @@
 import json
+import pickle
 
 def get_city():
     all_city = None
@@ -23,6 +24,12 @@ def get_smoking_type():
     with open('./columns.json', 'r') as f:
         all_smoking_type = json.load(f)['is_smoking']
     return all_smoking_type
+
+def get_estimation_price():
+    model = None
+    with open('./price_prediction_model.pickle', 'rb') as f:
+        model = pickle.load(f)
+    
 
 if __name__ == '__main__':
     print(get_smoking_type())

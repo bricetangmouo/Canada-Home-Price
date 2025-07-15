@@ -19,6 +19,13 @@ def predict_home_price():
     city= request.form(['city'])
     home_type = request.form(['home_type'])
     smoking_permission = request.form(['smoking_permission'])
+    beds = request.form(['beds'])
+    baths = request.form(['baths'])
+    sq_feet = request.form(['sq_feet'])
+    cats_allowed = request.form(['cats'])
+    dogs_allowed = request.form(['dogs'])
+    #LOL I HAVE DUPLICATE FKKKKK
+    nbr_beds = request.form(['nb_beds'])
 
 
 if __name__ == '__main__':
