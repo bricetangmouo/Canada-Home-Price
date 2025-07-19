@@ -4,11 +4,12 @@ import utils
 
 @app.route('/get_name_element', methods = ['GET'])
 def get_all_columns():
+    columns_name = utils.get_all_columns_data()
     reponse = jsonify({
-        'province':utils.get_province(),
-        'city': utils.get_city(),
-        'home_type': utils.get_type_home(),
-        'smoking_permission': utils.get_smoking_type()
+        'province':columns_name['province'],
+        'city': columns_name['city'],
+        'home_type': columns_name['type'],
+        'smoking_permission': columns_name['is_smoking']
     })
     reponse.headers.add('Access-Control-Allow-Origin', '*')
     return reponse
