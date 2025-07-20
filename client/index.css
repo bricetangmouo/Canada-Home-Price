@@ -1,0 +1,67 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.input_elements {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.input_elements h1 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.input_elements input[type="number"],
+.input_elements select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.input_elements input[type="number"]:focus,
+.input_elements select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+select:invalid {
+    color: #999;
+}
+
+@media (max-width: 600px) {
+    .input_elements {
+        padding: 20px;
+    }
+
+    .input_elements h1 {
+        font-size: 14px;
+    }
+
+    .input_elements input,
+    .input_elements select {
+        font-size: 14px;
+    }
+}
