@@ -28,3 +28,6 @@ Whether you're:
 - 👀 Or just curious about the market...
 
 Canada Home Pricer gives you data-backed insights to help you navigate the housing market with confidence.
+
+
+### This project is develop using ubuntu
