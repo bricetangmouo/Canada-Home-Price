@@ -11,6 +11,8 @@ Canada Home Pricer uses machine learning to estimate the fair market value of ho
 
 - 🛠️ Property features
 
+We trained our model on over 25,000 real home listings across Canada to ensure accurate and reliable pricing insights.
+
 It also allows users to:
 
 - 💰 Enter a budget range
@@ -30,4 +32,4 @@ Whether you're:
 Canada Home Pricer gives you data-backed insights to help you navigate the housing market with confidence.
 
 
-### This project is develop using ubuntu
+### ⚙️ This project is developed using Ubuntu
