@@ -3,42 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Canada Home Price Estimator</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header class="page-header">
+    </header>
+
     <div class="input_elements">
         <h1>Province: </h1>
-        <select name="" id="">
+        <select name="" id="uiProvince">
             <option value="" disabled="disabled" selected="selected"> Choose a province</option>
         </select>
+
         <h1>City:</h1>
-        <select name="" id="">
+        <select name="" id="uiCity">
             <option value="" disabled="disabled" selected="selected"> Choose a city</option>
         </select>
+
         <h1>Home Type:</h1>
-        <select name="" id="">
+        <select name="" id="uiHomeType">
             <option value="" disabled="disabled" selected="selected"> Choose a home type</option>
         </select>
+
+        <h1>Smoking Permission:</h1>
+        <select name="" id="uiSmokingPermission">
+            <option value="" disabled="disabled" selected="selected"> Choose a home type</option>
+        </select>
+
         <h1>Beds:</h1>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="ui_beds_nbr">
+
         <h1>Baths:</h1>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="ui_baths_nbr">
+
         <h1>Square feet of the house:</h1>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="ui_square_feet_nbr">
+
         <h1>Is Cats Allowed (True, False):</h1>
-        <select name="" id="">
+        <select name="" id="ui_Is_cats_allowed">
             <option value="" disabled="disabled" selected="selected"> Choose if you want cats</option>
             <option>True</option>
             <option>False</option>
         </select>
+
         <h1>Is Dogs Allowed (True, False):</h1>
-        <select name="" id="">
+        <select name="" id="ui_is_dogs_allowed">
             <option value="" disabled="disabled" selected="selected"> Choose if you want dogs</option>
             <option>True</option>
             <option>False</option>
         </select>
+
+        <button id="estimate_price_btn">Estimate Price</button>
         <h1></h1>
     </div>
 </body>
